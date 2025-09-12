@@ -1,167 +1,71 @@
-# TahananCrafts - E-commerce Website
+# Getting Started with Create React App
 
-A modern e-commerce website built with Django REST Framework backend and React.js frontend for artisan product management.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Features
+## Available Scripts
 
-- **Product Management**: Add, edit, and manage artisan products
-- **Image Gallery**: Upload and manage product images with drag-and-drop functionality
-- **Category Management**: Organize products by categories
-- **Responsive Design**: Modern, clean UI that works on all devices
-- **RESTful API**: Django REST Framework backend with proper API endpoints
+In the project directory, you can run:
 
-## Tech Stack
+### `npm start`
 
-### Backend
-- Django 4.2.7
-- Django REST Framework 3.14.0
-- SQLite (development)
-- Pillow (image handling)
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-### Frontend
-- React 18.2.0
-- React Router DOM 6.8.1
-- Axios (HTTP client)
-- CSS3 (custom styling)
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-## Project Structure
+### `npm test`
 
-```
-tahanan-crafts/
-├── backend/                 # Django backend
-│   ├── tahanan_crafts/     # Main Django project
-│   ├── products/           # Products app
-│   ├── manage.py
-│   └── requirements.txt
-├── frontend/               # React frontend
-│   ├── public/
-│   ├── src/
-│   │   ├── components/
-│   │   ├── services/
-│   │   └── App.js
-│   └── package.json
-└── README.md
-```
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-## Setup Instructions
+### `npm run build`
 
-### Prerequisites
-- Python 3.8+
-- Node.js 16+
-- pip (Python package manager)
-- npm (Node package manager)
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-### Backend Setup (Django)
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-1. **Navigate to the project directory:**
-   ```bash
-   cd "C:\COMPUTER SCIENCE\Thesis\THESIS WEBSITE\Front End\Artisan - Product Page"
-   ```
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-2. **Create and activate a virtual environment:**
-   ```bash
-   python -m venv venv
-   venv\Scripts\activate  # On Windows
-   ```
+### `npm run eject`
 
-3. **Install Python dependencies:**
-   ```bash
-   pip install -r requirements.txt
-   ```
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-4. **Run database migrations:**
-   ```bash
-   python manage.py makemigrations
-   python manage.py migrate
-   ```
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-5. **Create a superuser (optional):**
-   ```bash
-   python manage.py createsuperuser
-   ```
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-6. **Start the Django development server:**
-   ```bash
-   python manage.py runserver
-   ```
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-   The backend will be available at `http://localhost:8000`
+## Learn More
 
-### Frontend Setup (React)
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-1. **Install Node.js dependencies:**
-   ```bash
-   npm install
-   ```
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-2. **Start the React development server:**
-   ```bash
-   npm start
-   ```
+### Code Splitting
 
-   The frontend will be available at `http://localhost:3000`
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-## API Endpoints
+### Analyzing the Bundle Size
 
-### Products
-- `GET /api/products/` - List all products
-- `POST /api/products/` - Create a new product
-- `GET /api/products/{id}/` - Get product details
-- `PUT /api/products/{id}/` - Update product
-- `DELETE /api/products/{id}/` - Delete product
-- `POST /api/products/{id}/upload_images/` - Upload product images
-- `POST /api/products/{id}/set_primary_image/` - Set primary image
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Categories
-- `GET /api/categories/` - List all categories
-- `POST /api/categories/` - Create a new category
+### Making a Progressive Web App
 
-## Usage
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-1. **Access the Application:**
-   - Open your browser and go to `http://localhost:3000`
-   - You'll see the TahananCrafts product management interface
+### Advanced Configuration
 
-2. **Add a New Product:**
-   - Fill in the product details in the left column
-   - Upload images using the drag-and-drop area in the right column
-   - Click "Save and Publish" to create the product
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-3. **Manage Images:**
-   - Drag and drop images into the upload area
-   - Images will appear as thumbnails below
-   - Use the Delete/Cancel buttons to manage uploaded images
+### Deployment
 
-## Features Implemented
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-- Responsive layout with header, sidebar, and main content
-- Product form with all required fields
-- Image upload with drag-and-drop functionality
-- Image gallery with thumbnail previews
-- Modern, clean UI matching the design
-- Django REST API with proper endpoints
-- CORS configuration for frontend-backend communication
+### `npm run build` fails to minify
 
-## Development Notes
-
-- The project uses SQLite for development (easy to set up)
-- Images are stored in the `media/products/` directory
-- CORS is configured to allow requests from `localhost:3000`
-- The React app proxies API requests to `localhost:8000`
-
-## Next Steps
-
-- Add user authentication
-- Implement product listing and editing pages
-- Add order management functionality
-- Deploy to production with PostgreSQL
-- Add image optimization and resizing
-- Implement search and filtering
-
-## Troubleshooting
-
-- **CORS errors**: Make sure both servers are running and CORS is properly configured
-- **Image upload issues**: Check that the `media` directory exists and has proper permissions
-- **Database errors**: Run migrations with `python manage.py migrate`
-- **Port conflicts**: Change ports in the respective configuration files if needed
-
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+"# Tahanan-Crafts-frontend" 
